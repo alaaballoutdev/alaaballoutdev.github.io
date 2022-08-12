@@ -8,14 +8,14 @@ body{
 .container{
     font-family:"Overpass";
     color:hsl(0, 0%, 100%);
-    width:300px;
-    height:320px;
+    width:330px;
+    height:330px;
     background-color: hsl(213, 19%, 18%);
     position: absolute;
     right:50vw;
     top:50vh;
     margin-right: -180px;
-    margin-top: -190px;
+    margin-top: -180px;
     border-radius: 20px;
     padding: 30px;
 }
@@ -44,21 +44,21 @@ body{
     font-size: 15px;
     font-weight: 700;
     
-    width:40px;
-    height: 40px;
-    border-radius: 20px;
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
     background-color:hsla(216, 12%, 54%,0.1);
     text-align: center;
     display: inline-block;
     padding: auto;
-    margin-left:15px;
+    margin-left:12px;
    
 }
 .btn{
     background-color: hsl(25, 97%, 53%);
     border: none;
     color: hsl(0, 0%, 100%);
-    width:290px;
+    width:330px;
     padding: 10px;
     border-radius: 20px;
     font-family: "Overpass";
@@ -103,4 +103,45 @@ body{
 }
 #thanks-state{
     text-align: center;
+}
+@media screen and (max-width:600px) {
+    .container{
+        font-family:"Overpass";
+        color:hsl(0, 0%, 100%);
+        width:320px;
+        height:330px;
+        background-color: hsl(213, 19%, 18%);
+        position: absolute;
+        right:50vw;
+        top:50vh;
+        margin-right: -165px;
+        margin-top: -170px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .rate-box{
+        color: hsl(216, 12%, 54%);
+        font-size: 15px;
+        font-weight: 700;
+        
+        width:50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color:hsla(216, 12%, 54%,0.1);
+        text-align: center;
+        display: inline-block;
+        padding: auto;
+        margin-left:10px;
+       
+    }
+    .btn{
+        background-color: hsl(25, 97%, 53%);
+        border: none;
+        color: hsl(0, 0%, 100%);
+        width:320px;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: "Overpass";
+        font-size: 15px;
+    }
 }
