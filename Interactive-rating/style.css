@@ -93,10 +93,14 @@ body{
    margin-bottom: 20px;
    font-size: 15px;
    font-weight: 400;
+   margin-left: 65px;
 }
 .thank-you-image{
     margin-bottom: 20px;
 }
 #rate-selected{
     font-weight:400;
+}
+#thanks-state{
+    text-align: center;
 }
