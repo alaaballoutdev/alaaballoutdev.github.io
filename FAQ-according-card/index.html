@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  
+ 
+</head>
+<body>
+ <div class="container">
+  <div class="side-design">
+    <div class="images">
+      <img src="./images/illustration-box-desktop.svg" alt="box"class="box-illu">
+      <img src="./images/illustration-woman-online-mobile.svg" alt="woman-mobile"class="woman-mobile">
+    </div>
+
+  </div>
+ 
+  <div class="faq">
+    <h1 class="title">FAQ</h1>
+  <div class="question-box" onclick="displayAnswer(this)">
+      <span class="question"> How many team members can I invite?</span>
+      <span><img src="./images/icon-arrow-down.svg" alt="arrow"  class="arrow"></span>
+      <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.</p>
+     
+  </div>
+  <hr/>
+  <div class="question-box"onclick="displayAnswer(this)">
+    <span class="question"> What is the maximum file upload size?</span>
+    <span><img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" onclick="displayAnswer(this)"></span>
+    <p class="answer"> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+   
+  </div>
+  <hr/>
+  <div class="question-box" onclick="displayAnswer(this)">
+    <span class="question"> How do I reset my password?</span>
+    <span><img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" ></span>
+    <p class="answer"> Click “Forgot password” from the login page or “Change password” from your profile page.
+      A reset link will be emailed to you.</p>
+   
+  </div>
+<hr/>
+  <div class="question-box" onclick="displayAnswer(this)">
+    <span class="question"> Can I cancel my subscription?</span>
+    <span><img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" ></span>
+    <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+   
+  </div>
+<hr/>
+  <div class="question-box" onclick="displayAnswer(this)">
+    <span class="question">Do you provide additional support?</span>
+    <span><img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow" ></span>
+    <p class="answer"> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+   
+  </div> 
+<hr/>
+ </div>
+
+</div> 
+
+</body>
+<script src="./site.js"></script>
+</html>
