@@ -1,7 +1,7 @@
 :root{
     --bg-color:hsl(212, 45%, 89%);
-    --card-height:400px;
-    --card-width:250px;
+    --card-height:425px;
+    --card-width:260px;
     --bold:900;
     --regular:400;
     
@@ -31,11 +31,11 @@ body{
     text-align: center;
     padding:15px;
     box-shadow: 5px 10px 18px #cccccc;
-
+    box-sizing: border-box;
 }
 
 #QR-Code-Image{
-    width: 230px;
+    width: 220px;
     height: 230px;
     border-radius: 15px;
 }
