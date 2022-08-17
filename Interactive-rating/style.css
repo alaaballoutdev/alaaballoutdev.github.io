@@ -2,27 +2,49 @@
     font-family:"Overpass";
     src: url("./Overpass/Overpass-VariableFont_wght.ttf");
 }
+:root{
+    --body-bg-color:hsl(216, 12%, 8%);
+    --container-bg-color: hsl(213, 19%, 18%);
+    --star-box-bg-color:hsla(216, 12%, 54%,0.1);
+    --gray:hsl(216, 12%, 54%);
+    --orange:hsl(25, 97%, 53%);
+    
+    --container-width:360px;
+    --container-height:380px;
+    --container-padding:17px;
+    
+    --container-width-mobile:320px;
+    --container-height-mobile:380px;
+
+}
+
+
 body{
-    background-color: hsl(216, 12%, 8%);
+    background-color: var(--body-bg-color);
 }
 .container{
     font-family:"Overpass";
     color:hsl(0, 0%, 100%);
-    width:330px;
-    height:330px;
-    background-color: hsl(213, 19%, 18%);
+    width:var(--container-width);
+    height:var(--container-height);
+    background-color:var(--container-bg-color);
     position: absolute;
     right:50vw;
     top:50vh;
-    margin-right: -180px;
-    margin-top: -180px;
+    margin-right: calc((-1)*var(--container-width)*(1/2));
+    margin-top: calc((-1)*var(--container-height)*(1/2)) ;
+    
     border-radius: 20px;
-    padding: 30px;
+    padding:var(--container-padding);
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
 }
 .star-box{
     width:50px;
     height: 50px;
-    background-color:hsla(216, 12%, 54%,0.1);
+    background-color:var(--star-box-bg-color);
     border-radius: 25px;
     text-align: center;
 }
@@ -31,61 +53,63 @@ body{
     margin-top: 17.5px;
 }
 .title{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 22px;
 }
 .description{
-    color: hsl(216, 12%, 54%);
+    color: var(--gray);
     font-size: 15px;
-    line-height: 25px;
+    line-height: 30px;
 }
 .rate-box{
-    color: hsl(216, 12%, 54%);
+    color: var(--gray);
     font-size: 15px;
     font-weight: 700;
     
-    width:50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color:hsla(216, 12%, 54%,0.1);
+    width:45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color:var(--star-box-bg-color);
     text-align: center;
     display: inline-block;
     padding: auto;
-    margin-left:12px;
+    margin-right:16px;
    
 }
 .btn{
-    background-color: hsl(25, 97%, 53%);
+    background-color: var(--orange);
     border: none;
     color: hsl(0, 0%, 100%);
-    width:330px;
+    width:calc( var(--container-width) - (2) * var(--container-padding));
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-weight: 500;
     font-family: "Overpass";
     font-size: 15px;
+    box-sizing: border-box;
 }
 #thanks-state{
     display: none;
 }
 .btn:hover{
-    color:hsl(25, 97%, 53%);
+    color:var(--orange);
     background-color: hsl(0, 0%, 100%);
 }
 .rate-box:hover{
-    background-color:hsl(25, 97%, 53%);
+    background-color:var(--orange);
     color:hsl(0, 0%, 100%);
 }
 
 .clicked{
     color:hsl(0, 0%, 100%);
-    background-color: hsl(216, 12%, 54%);
+    background-color: var(--gray);
 }
 #message{
     display: block;
     height: 25px;
 }
 .selection{
-   color: hsl(25, 97%, 53%);
+   color: var(--orange);
    background-color: hsla(216, 12%, 54%,0.1);
    width:162px;
    padding: 5px;
@@ -93,7 +117,7 @@ body{
    margin-bottom: 20px;
    font-size: 15px;
    font-weight: 400;
-   margin-left: 65px;
+   margin-left: 75px;
 }
 .thank-you-image{
     margin-bottom: 20px;
@@ -106,42 +130,19 @@ body{
 }
 @media screen and (max-width:600px) {
     .container{
-        font-family:"Overpass";
-        color:hsl(0, 0%, 100%);
-        width:320px;
-        height:330px;
-        background-color: hsl(213, 19%, 18%);
-        position: absolute;
-        right:50vw;
-        top:50vh;
-        margin-right: -165px;
-        margin-top: -170px;
-        border-radius: 20px;
+        width:var(--container-width-mobile);
+        height:var(--container-height-mobile);
+        margin-right: calc( (-1) * var(--container-width-mobile) * (1/2));
+        margin-top: calc( (-1) * var(--container-height-mobile) * (1/2));
         padding: 10px;
     }
     .rate-box{
-        color: hsl(216, 12%, 54%);
-        font-size: 15px;
-        font-weight: 700;
-        
-        width:50px;
-        height: 50px;
-        border-radius: 25px;
-        background-color:hsla(216, 12%, 54%,0.1);
-        text-align: center;
         display: inline-block;
         padding: auto;
-        margin-left:10px;
-       
+        margin-right: 12px;
     }
     .btn{
-        background-color: hsl(25, 97%, 53%);
-        border: none;
-        color: hsl(0, 0%, 100%);
-        width:320px;
-        padding: 10px;
-        border-radius: 20px;
-        font-family: "Overpass";
-        font-size: 15px;
+       width:calc( var(--container-width-mobile) - 20px);
+       box-sizing: border-box;
     }
 }
