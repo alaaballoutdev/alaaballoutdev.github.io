@@ -139,7 +139,7 @@ body{
     .rate-box{
         display: inline-block;
         padding: auto;
-        margin-right: 12px;
+        margin-right: 10px;
     }
     .btn{
        width:calc( var(--container-width-mobile) - 20px);
