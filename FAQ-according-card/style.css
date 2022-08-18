@@ -5,7 +5,7 @@
     --soft-blue: hsl(240, 73%, 65%);
     --very-dark-grayish-blue: hsl(237, 12%, 33%);
     --dark-grayish-blue: hsl(240, 6%, 50%);
-    --light-grayish-blue: hsl(240, 5%, 91%);
+    --light-grayish-blue: hsl(240, 5%, 92%);
 
     --container-width:900px;
     --container-height:500px;
@@ -82,7 +82,7 @@ body{
 .answer{
     display: none;
     color:var(--dark-grayish-blue);
-    width: 400px;
+    width: calc(var(--container-width)*(1/2)*(0.65));
     font-size: 12px;
 }
 .question{
@@ -98,12 +98,13 @@ body{
 }
 .arrow{
     position: absolute;
-    right:40px;
+    right:120px;
     margin-top: 5px;
 }
 hr{
-    color:--light-grayish-blue;
-    width: calc(var(--container-width)*(1/2)*(0.9));
+    border: 1px solid var(--light-grayish-blue);
+    width: calc(var(--container-width)*(1/2)*(0.7));
+
 }
 .answer-active{
     display: block;
@@ -111,6 +112,7 @@ hr{
 .question-box{
     margin-bottom: 20px;
     margin-top: 20px;
+    width:calc(var(--container-width)*(1/2)*(0.7));
 }
 .open{
     transform: rotate(180deg);
