@@ -2,7 +2,7 @@
   "name": "expense-chart-component",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://alaaballoutdev.github.io/expenses-chart-component",
+  "homepage": "https://alaaballoutdev.github.io/expenses-chart-component",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
